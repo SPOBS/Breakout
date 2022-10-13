@@ -1,5 +1,5 @@
 <?php
-
+// TODO add high scores and save them to the score board
 $json = file_get_contents("../json/scoreboard.json");
 $scoreboard = json_decode($json);
 $response = new stdClass();

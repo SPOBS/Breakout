@@ -119,7 +119,7 @@ class RowStandard extends BrickRow {
             switch(powerUp){
                 case 0: this.bricks[brickNo].setPowerUp("pierce"); break;
                 case 1: this.bricks[brickNo].setPowerUp("pierce");  break;
-                // case 1: this.bricks[brickNo].setPowerUp("multi");  break;
+                // case 1: this.bricks[brickNo].setPowerUp("multi");  break; // TODO add multiball powerup. Pierce currently taking its slot
                 default: this.bricks[brickNo].setPowerUp("hyper");  break;
             } 
         }

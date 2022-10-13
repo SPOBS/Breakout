@@ -27,8 +27,6 @@ class Ball extends GameObject {
             if(!powerActive){
                 this.colour = '#909497';
             }
-
-            // console.log((Math.sin(this.a*Math.PI/180) * velocity * gameStatus.gameSpeed) + ", " + (Math.cos(this.a*Math.PI/180) * velocity * gameStatus.gameSpeed));
     
             this.x += Math.sin(this.a*Math.PI/180) * velocity * gameStatus.gameSpeed
             this.y += Math.cos(this.a*Math.PI/180) * velocity * gameStatus.gameSpeed

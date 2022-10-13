@@ -104,6 +104,7 @@ class Breakout{
             this.gameObjects[object].draw();
         }
 
+        // new frame
         window.requestAnimationFrame((timestamp) => this.gameLoop(timestamp));
     }
 
@@ -258,6 +259,7 @@ class Breakout{
                 return;
             }
 
+            /******* SHIELD COLLISION *******/
             let shieldH = shield.h;
             if(shield.active){
                 if(ballY >= this.height - ballRadius - shieldH) {
@@ -318,6 +320,8 @@ class Breakout{
         this.checkScoreboard();
     }
 
+
+    // TODO add scoreboard functionality
     async checkScoreboard() {
         let response = await this.getScoreboard();
         if(response.code === "success"){
@@ -366,7 +370,7 @@ TODO
 Features
 - Scoreboard - IN PROGRESS
 - Menues to navigate (state machine)
-- Add multiball
+- Add multiball powerup
 - Score bonuses
 - More types of brick rows (stonger bricks, gaps, strafing bricks, etc)
 

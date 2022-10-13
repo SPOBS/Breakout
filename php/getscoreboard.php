@@ -1,5 +1,5 @@
 <?php
-
+// TODO retreive the top high scores and display on screen
 $json = file_get_contents("../json/scoreboard.json");
 $scoreboard = json_decode($json);
 $response = new stdClass();
